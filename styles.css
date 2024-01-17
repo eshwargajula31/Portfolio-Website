@@ -1,331 +1,186 @@
-/* Custom properties/variables  */
-:root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
-}
-
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* Base styles */
-
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--main-white);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
-h1 {
-  font-size: 6rem;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h2 {
-  font-size: 4.2rem;
+.logo {
+    font-size: 1.5rem;
 }
 
-ul {
-  list-style: none;
+.nav-links {
+    list-style: none;
+    display: flex;
 }
 
-a {
-  text-decoration: none;
-  color: var(--main-white);
+.nav-links li {
+    margin-right: 20px;
 }
 
-img {
-  display: block;
-  width: 100%;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-/* nav */
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--main-red);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
+.nav-links a:hover {
+    color: #ff8c00;
 }
 
-.nav-list {
-  display: flex;
-  margin-right: 2rem;
+.home-section {
+    background-image: url('./sun.jpg'); /* Replace with the path to your image */
+    background-size: contain;
+    background-position: justify;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 150px;
+    text-align: center;
+    color: hsl(210, 100%, 99%); /* Set text color to white or a contrasting color */
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
+.greeting {
+    animation: fadeIn 2s ease-in-out;
+    font-weight: bolder;
+    font-size: 25px;
 }
-
-.nav-list a {
-  display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
-}
-
-.nav-list a:hover {
-  background: var(--main-blue);
-}
-
-/* Welcome section */
-
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
-}
-
-/* Projects section */
 
 .projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
+    background-color: #ddd;
+    padding: 50px;
 }
 
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+.project-card h3 {
+    color: #333;
 }
 
-.project {
-  background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+.project-card p {
+    color: #555;
 }
 
-.code {
-  color: var(--main-gray);
-  transition: color 0.3s ease-out;
+.project-card button {
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.project:hover .code {
-  color: #ff7f50;
+.project-card button:hover {
+    background-color: #333;
 }
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
-}
-
-.btn-show-all:hover {
-  background: var(--main-red);
-}
-
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
-/* Contact section */
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
+    background-color: #f2f2f2;
+    padding: 50px;
 }
 
-.contact-section-header > h2 {
-  font-size: 6rem;
+.contact-form form {
+    max-width: 600px;
+    margin: auto;
 }
 
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
 }
 
-.contact-section-header > p {
-  font-style: italic;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
+.contact-form button:hover {
+    background-color: #ff8c00;
 }
 
-.contact-details:hover {
-  transform: translateY(8px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-/* Footer */
-
-footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-footer > p {
-  margin: 2rem;
+.project-card.animate {
+    animation: cardEntrance 0.5s ease-out;
+}
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .home-section {
+        background-size: contain;
+        background-position: top;
+    }
 }
 
-footer i {
-  vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
+@media (min-width: 769px) {
+    .home-section {
+        background-size: cover;
+        background-position: center;
+    }
 }
