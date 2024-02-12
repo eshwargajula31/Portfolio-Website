@@ -3,61 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>ESHWAR's Portfolio</title>
+    <link rel="stylesheet" href="./images/styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">ESHWAR</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#certificates">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="home-section">
-        <div class="greeting">
-            <h1>Welcome to my site</h1>
-            <p style="color:aqua;">Developer</p>
+   <div class="fade-in-up">
+    <div class="content">
+        <div class="about-me">
+            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bolder;">ABOUT ME</h2>
+                <p><i> My name is Eshwar Gajula and I am a web developer with experience in front end development.</i></p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/gajula-eshwar" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
+                        <a href="https://www.instagram.com/__eshwar__0531" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                        <a href="https://www.snapchat.com/add/word_manxxx" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ultraviolet/40/snapchat.png" alt="snapchat"/></a>
+                        <a href="https://github.com/techtricks1" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></a>
+                        <a href="https://github.com/White-OG" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/organization.png" alt="organization"/></a>
+                    </div>
         </div>
+    </div>
+    <section class="skills-list" id="skills-section">
+        <h2>SKILLS:</h2>
+        <div class="skills">
+        <div class="web-development">
+            <h3 style="font-size: medium; font-weight:bolder;">Web Development:</h3>
+            <div class="skill">
+                HTML 5 & CSS3
+            </div>
+            <div class="skill">
+                JavaScript
+            </div>
+            <div class="skill">Front End Development Libraries</div>
+        </div>
+        <div class="programming-languages">
+            <h3 style="font-size: medium; font-weight:bolder; color:rgb(30, 31, 31);">Programming Languages:</h3>
+            <div class="skill">
+                Python
+            </div>
+            <div class="skill">
+                C#
+            </div>
+        </div>
+        <div class="ML">
+            <h3 style="font-size: medium; font-weight:bolder;">Machine Learning & Data Science:</h3>
+            <div class="skill">
+                TensorFlow
+            </div>
+            <div class="skill">
+                NumPy
+            </div>
+            <div class="skill">
+                PyTorch
+            </div>
+            <div class="skill">
+                Data Analysis
+            </div>
+            <div class="skill">
+                Data Visualization
+            </div>
+        </div>
+
+        <div class="Others">
+            <h3 style="font-size: medium; font-weight:bolder;">Other Skills:</h3>
+            <div class="skill">
+                Photo Editing
+            </div>
+            <div class="skill">
+                Video Editing
+            </div>
+        </div>
+    </div>
     </section>
-    
+    <section class="certificates-section" id="certificates">
+        <h2>CERTIFICATIONS:</h2>
+        <br><br>
+        <div  class="certificates-container">
+        <div class="responsive-webdesign" onmouseover="showButton('webdesign')" onmouseout="hideButton('webdesign')">
+            <h3>Responsive Web Design</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="webdesign" class="hidden">View certificate</button>
+        </div>
+        <div class="JS" onmouseover="showButton('JS')" onmouseout="hideButton('JS')">
+            <h3>JavaScript Algorithma and Data Structures</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="JS" class="hidden">View certificate</button>
+        </div>
+        <div class="front-end" onmouseover="showButton('front-end')" onmouseout="hideButton('front-end')">
+            <h3>Front End Development Libraries</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="front-end" class="hidden">View Certificate</button>
+        </div>
+        <div class="data-visualization" onmouseover="showButton('data-visualization')" onmouseout="hideButton('data-visualization')">
+            <h3>Data Visualization Certification</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="data-visualization" class="hidden">View Certifiacte</button>
+        </div>
+        <div class="python" onmouseover="showButton('python')" onmouseout="hideButton('python')">
+            <h3>Scientific Computing with Python</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="python" class="hidden">View Certificate</button>
+        </div>
+        <div class="data-analysis" onmouseover="showButton('data-analysis')" onmouseout="hideButton('data-analysis')">
+            <h3>Data Analysis with Python</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="data-analysis"  class="hidden">View Certificate</button>
+        </div>
+        <div class="c#" onmouseover="showButton('c#')" onmouseout="hideButton('c#')">
+            <h3>Foundational C# with Microsoft</h3>
+            <p>By Freecodecamp.org, Microsoft</p>
+            <button id="c#" class="hidden">View certificate</button>
+        </div>
+        </div> <!-- certificates-container -->
+    </section>
     <section id="projects" class="projects-section">
-        <h2 style="font-weight: bolder; font-size: 30px;">Projects</h2>
+        <h2>Projects:</h2>
         <div class="project-cards">
             
             <div class="project-card" id="WebDevelopmentProjects">
                 <h3>Web Development Project</h3>
                 <p>A responsive website built using HTML, CSS, and JavaScript.</p>
-                <button onclick="navigateToProjectPage('web-development')">Learn More</button>
+                <button onclick="navigateToProjectPage('web-development')" class="hidden">Learn More</button>
             </div>
         
             <div class="project-card" id="machineLearningProjets">
                 <h3>Machine Learning Project</h3>
                 <p>An image classification model using TensorFlow and Python.</p>
-                <button onclick="navigateToProjectPage('Machine-Learning')">Learn More</button>
+                <button onclick="navigateToProjectPage('Machine-Learning')" class="hidden">Learn More</button>
             </div>
             <div class="project-card" id="IOTProjects">
                 <h3>IoT Project</h3>
                 <p>Smart home automation using Raspberry Pi and sensors.</p>
-                <button onclick="navigateToProjectPage('iot')">Learn More</button>
+                <button onclick="navigateToProjectPage('iot')" class="hidden">Learn More</button>
             </div>
             <div class="project-card" id="project4">
                 <h3>Data Science Project</h3>
                 <p>Analyzing and visualizing data with Pandas and Matplotlib.</p>
-                <button onclick="animateProject('project4')">Learn More</button>
+                <button onclick="animateProject('project4')" class="hidden">Learn More</button>
             </div>
             <div class="project-card" id="project5">
                 <h3>Python Scripting Project</h3>
                 <p>Automating tasks with Python scripts and libraries.</p>
-                <button onclick="animateProject('project5')">Learn More</button>
+                <button onclick="animateProject('project5')" class="hidden">Learn More</button>
             </div>
         </div>
     </section>
-
+</div>
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <div class="contact-form">
@@ -75,227 +176,9 @@
             </form>
         </div>
     </section>
-<style>
-    body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ff8c00;
-}
-
-.home-section {
-    background-image: url('sun.jpg'); /* Replace with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    padding: 100px;
-    text-align: center;
-    color: hsl(210, 100%, 99%); /* Set text color to white or a contrasting color */
-}
-
-.greeting {
-    animation: fadeIn 2s ease-in-out;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.projects-section {
-    background-color: #ddd;
-    padding: 50px;
-}
-
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    color: #333;
-}
-
-.project-card p {
-    color: #555;
-}
-
-.project-card button {
-    background-color: #ff8c00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.project-card button:hover {
-    background-color: #333;
-}
-
-.contact-section {
-    background-color: #f2f2f2;
-    padding: 50px;
-}
-
-.contact-form form {
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #ff8c00;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes cardEntrance {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.project-card.animate {
-    animation: cardEntrance 0.5s ease-out;
-}
-/* Media queries for different screen sizes */
-@media (max-width: 768px) {
-    .home-section {
-        background-size: contain;
-        background-position: top;
-    }
-}
-
-@media (min-width: 769px) {
-    .home-section {
-        background-size: cover;
-        background-position: center;
-    }
-}
-</style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
-    <script>
-        function navigateToProjectPage(projectId) {
-    // Define the mapping of project IDs to their respective pages
-    const projectPageMapping = {
-        'web-development': 'web-development-projects.html',
-        'Machine-Learning': 'machine-learning-projects.html',
-        'iot': 'iot-projects.html'
-        // Add more mappings for other projects if needed
-    };
-
-    // Get the page URL based on the project ID
-    const projectPageUrl = projectPageMapping[projectId];
-
-    // Check if a valid URL is found
-    if (projectPageUrl) {
-        // Navigate to the project page
-        window.location.href = projectPageUrl;
-    } else {
-        console.error(`No URL found for project ID: ${projectId}`);
-    }
-}
-
-
-// Animation for project cards
-function animateProject(projectId) {
-    const projectCard = document.getElementById(projectId);
-    projectCard.classList.add("animate__animated", "animate__bounce", "animate");
-
-    setTimeout(() => {
-        projectCard.classList.remove("animate__animated", "animate__bounce", "animate");
-    }, 1000);
-}
-    </script>
+    <footer>
+        <p>Created by Eshwar Gajula. &copy; 2024</p>
+    </footer>
+    <script src="./images/script.js"></script>
 </body>
 </html>
