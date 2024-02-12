@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESHWAR's Portfolio</title>
+    <link rel="stylesheet" href="./images/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#certificates">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="fade-in-up">
+    <div class="content">
+        <div class="about-me">
+            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight:bolder;">ABOUT ME</h2>
+                <p><i> My name is Eshwar Gajula and I am a web developer with experience in front end development.</i></p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/gajula-eshwar" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
+                        <a href="https://www.instagram.com/__eshwar__0531" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                        <a href="https://www.snapchat.com/add/word_manxxx" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ultraviolet/40/snapchat.png" alt="snapchat"/></a>
+                        <a href="https://github.com/techtricks1" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></a>
+                        <a href="https://github.com/White-OG" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/organization.png" alt="organization"/></a>
+                    </div>
+        </div>
+    </div>
+    <section class="skills-list" id="skills-section">
+        <h2>SKILLS:</h2>
+        <div class="skills">
+        <div class="web-development">
+            <h3 style="font-size: medium; font-weight:bolder;">Web Development:</h3>
+            <div class="skill">
+                HTML 5 & CSS3
+            </div>
+            <div class="skill">
+                JavaScript
+            </div>
+            <div class="skill">Front End Development Libraries</div>
+        </div>
+        <div class="programming-languages">
+            <h3 style="font-size: medium; font-weight:bolder; color:rgb(30, 31, 31);">Programming Languages:</h3>
+            <div class="skill">
+                Python
+            </div>
+            <div class="skill">
+                C#
+            </div>
+        </div>
+        <div class="ML">
+            <h3 style="font-size: medium; font-weight:bolder;">Machine Learning & Data Science:</h3>
+            <div class="skill">
+                TensorFlow
+            </div>
+            <div class="skill">
+                NumPy
+            </div>
+            <div class="skill">
+                PyTorch
+            </div>
+            <div class="skill">
+                Data Analysis
+            </div>
+            <div class="skill">
+                Data Visualization
+            </div>
+        </div>
+
+        <div class="Others">
+            <h3 style="font-size: medium; font-weight:bolder;">Other Skills:</h3>
+            <div class="skill">
+                Photo Editing
+            </div>
+            <div class="skill">
+                Video Editing
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="certificates-section" id="certificates">
+        <h2>CERTIFICATIONS:</h2>
+        <br><br>
+        <div  class="certificates-container">
+        <div class="responsive-webdesign" onmouseover="showButton('webdesign')" onmouseout="hideButton('webdesign')">
+            <h3>Responsive Web Design</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="webdesign" class="hidden">View certificate</button>
+        </div>
+        <div class="JS" onmouseover="showButton('JS')" onmouseout="hideButton('JS')">
+            <h3>JavaScript Algorithma and Data Structures</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="JS" class="hidden">View certificate</button>
+        </div>
+        <div class="front-end" onmouseover="showButton('front-end')" onmouseout="hideButton('front-end')">
+            <h3>Front End Development Libraries</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="front-end" class="hidden">View Certificate</button>
+        </div>
+        <div class="data-visualization" onmouseover="showButton('data-visualization')" onmouseout="hideButton('data-visualization')">
+            <h3>Data Visualization Certification</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="data-visualization" class="hidden">View Certifiacte</button>
+        </div>
+        <div class="python" onmouseover="showButton('python')" onmouseout="hideButton('python')">
+            <h3>Scientific Computing with Python</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="python" class="hidden">View Certificate</button>
+        </div>
+        <div class="data-analysis" onmouseover="showButton('data-analysis')" onmouseout="hideButton('data-analysis')">
+            <h3>Data Analysis with Python</h3>
+            <p>By Freecodecamp.org</p>
+            <button id="data-analysis"  class="hidden">View Certificate</button>
+        </div>
+        <div class="c#" onmouseover="showButton('c#')" onmouseout="hideButton('c#')">
+            <h3>Foundational C# with Microsoft</h3>
+            <p>By Freecodecamp.org, Microsoft</p>
+            <button id="c#" class="hidden">View certificate</button>
+        </div>
+        </div> <!-- certificates-container -->
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>Projects:</h2>
+        <div class="project-cards">
+            
+            <div class="project-card" id="WebDevelopmentProjects">
+                <h3>Web Development Project</h3>
+                <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+                <button onclick="navigateToProjectPage('web-development')" class="hidden">Learn More</button>
+            </div>
+        
+            <div class="project-card" id="machineLearningProjets">
+                <h3>Machine Learning Project</h3>
+                <p>An image classification model using TensorFlow and Python.</p>
+                <button onclick="navigateToProjectPage('Machine-Learning')" class="hidden">Learn More</button>
+            </div>
+            <div class="project-card" id="IOTProjects">
+                <h3>IoT Project</h3>
+                <p>Smart home automation using Raspberry Pi and sensors.</p>
+                <button onclick="navigateToProjectPage('iot')" class="hidden">Learn More</button>
+            </div>
+            <div class="project-card" id="project4">
+                <h3>Data Science Project</h3>
+                <p>Analyzing and visualizing data with Pandas and Matplotlib.</p>
+                <button onclick="animateProject('project4')" class="hidden">Learn More</button>
+            </div>
+            <div class="project-card" id="project5">
+                <h3>Python Scripting Project</h3>
+                <p>Automating tasks with Python scripts and libraries.</p>
+                <button onclick="animateProject('project5')" class="hidden">Learn More</button>
+            </div>
+        </div>
+    </section>
+</div>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Created by Eshwar Gajula. &copy; 2024</p>
+    </footer>
+    <script src="./images/script.js"></script>
+</body>
+</html>
