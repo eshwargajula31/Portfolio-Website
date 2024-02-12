@@ -21,6 +21,7 @@ box-sizing: border-box;
 background-image: url('./Picsart_24-02-12_06-41-34-331-removebg.png'); /* Replace 'background.jpg' with the path to your background image */
 background-size: cover;
 background-position: center;
+position: absolute;
 background-attachment: fixed; /* Optional: To fix the background image while scrolling */
 height: 100%;
 width: 100%;
@@ -425,3 +426,53 @@ button:hover {
 background-color: #ff8c00;
 color: #fff;
 }
+/* Default styles */
+/* Add your default styles here */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .skills-list, .certificates-section, .projects-section, .contact-section {
+        padding: 20px;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Additional media queries for specific screen sizes if needed */
