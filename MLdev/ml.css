@@ -1,0 +1,115 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffd700;
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Project List Styles */
+.project-list {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    justify-content: center; /* Center the items */
+}
+
+.project {
+    background-color: #1c1c1c;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Three items in a row */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Button Styles with Animation */
+.btn {
+    padding: 10px 25px;
+    background-color: #ffd700;
+    color: #1c1c1c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        width: 80%; /* Stacked projects on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .project {
+        width: 100%; /* Full width for mobile */
+    }
+}

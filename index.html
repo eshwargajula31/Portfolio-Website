@@ -3,182 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESHWAR's Portfolio</title>
-    <link rel="stylesheet" href="images/styles.css">
+    <title>Portfolio - Eshwar Gajula</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Elegant Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero">Eshwar Gajula</a>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#certificates">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-   <div class="fade-in-up">
-    <div class="content">
-        <div class="about-me">
-            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">ABOUT ME</h2>
-                <p><i> My name is Eshwar Gajula and I am a web developer with experience in front-end development.</i></p>
-                    <div class="social-icons">
-                        <a href="www.linkedin.com/in/gajula-eshwar" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></a>
-                        <a href="https://www.instagram.com/__eshwar__0531" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-                        <a href="https://www.snapchat.com/add/word_manxxx" target="_blank"><img width="40" height="40" src="https://img.icons8.com/ultraviolet/40/snapchat.png" alt="snapchat"/></a>
-                        <a href="https://github.com/techtricks1" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></a>
-                        <a href="https://github.com/White-OG" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/organization.png" alt="organization"/></a>
-                    </div>
-        </div>
-    </div>
-    <section class="skills-list" id="skills-section">
-        <h2>SKILLS:</h2>
-        <div class="skills">
-        <div class="web-development">
-            <h3 style="font-size: medium; font-weight:bolder;">Web Development:</h3>
-            <div class="skill">
-                HTML 5 & CSS3
+    <!-- Hero Section with Animated Image and Social Links -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="intro">
+                <p class="name">Hi, I am Eshwar Gajula!</p>
+                <p class="subtitle">I'm a <span class="typing"></span></p>
+                <!-- Social Links Below Typing Text -->
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/gajula-eshwar" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/techtricks1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/_eshwar_0531" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/find.eshwar" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+                </div>
             </div>
-            <div class="skill">
-                JavaScript
-            </div>
-            <div class="skill">Front End Development Libraries</div>
-        </div>
-        <div class="programming-languages">
-            <h3 style="font-size: medium; font-weight:bolder; color:RGB(30, 31, 31);">Programming Languages:</h3>
-            <div class="skill">
-                Python
-            </div>
-            <div class="skill">
-                C#
+            <div class="image-container">
+                <img src="./" alt="Eshwar Gajula" class="animated-image">
             </div>
         </div>
-        <div class="ML">
-            <h3 style="font-size: medium; font-weight:bolder;">Machine Learning & Data Science:</h3>
-            <div class="skill">
-                TensorFlow
-            </div>
-            <div class="skill">
-                NumPy
-            </div>
-            <div class="skill">
-                PyTorch
-            </div>
-            <div class="skill">
-                Data Analysis
-            </div>
-            <div class="skill">
-                Data Visualization
-            </div>
-        </div>
+    </section>
 
-        <div class="Others">
-            <h3 style="font-size: medium; font-weight:bolder;">Other Skills:</h3>
-            <div class="skill">
-                Photo Editing
-            </div>
-            <div class="skill">
-                Video Editing
-            </div>
-        </div>
-    </div>
+    <!-- About Section -->
+    <section id="About" class="about">
+        <h2>About Me</h2>
+        <p>I’m <strong>Gajula Eshwar</strong>, an entry-level IT professional passionate about building dynamic web applications and creating innovative solutions through web development, machine learning, and IoT. With a solid foundation in Computer Science and Engineering, I thrive in environments that challenge my problem-solving skills and push me to learn continuously.</p>
+
+        <p>Over the past few years, I’ve honed my expertise as a <strong>Front End Developer</strong> and <strong>IoT Developer</strong>, crafting projects that range from intuitive web interfaces to real-time sensor monitoring systems.</p>
+
+        <p>At <strong>Code Clause</strong>, I was responsible for developing interactive web applications like an Event Management System, Countdown Timer, Background Generator, and Simple Calculator, utilizing cutting-edge technologies like HTML, CSS, JavaScript, React JS, and Bootstrap. This role helped me deepen my understanding of responsive design and user experience (Jul 2024 - Aug 2024).</p>
+
+        <p>Prior to that, I worked with <strong>Coding Raja Technologies</strong> where I built a <strong>Resume Generator web application</strong>, bringing together HTML, CSS, Bootstrap, and JavaScript to offer users a seamless experience in creating custom resumes (Mar 2024 - Apr 2024).</p>
+
+        <p>In addition to web development, I have hands-on experience in <strong>IoT Development</strong>, having worked with <strong>Bolt IoT</strong>. I successfully designed a <strong>smart monitoring system</strong>, integrating multiple sensors for automated alerts based on light and temperature readings. My work focused on real-time data collection and analysis, empowering users with actionable insights through IoT modules (Nov 2023 - Dec 2023).</p>
+
+        <h3>Core Skills</h3>
+        <ul>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React JS, Bootstrap</li>
+            <li><strong>Programming & Scripting:</strong> Python, C#</li>
+            <li><strong>Database Management:</strong> MySQL</li>
+            <li><strong>Tools:</strong> Git, Flask, SEO Optimization, Canva</li>
+            <li><strong>IoT Development:</strong> Sensor Integration, Monitoring Systems, Real-Time Data Analysis</li>
+            <li><strong>Soft Skills:</strong> Researching, Troubleshooting, Problem-Solving, Adaptability</li>
+        </ul>
+
+        <h3>Education</h3>
+        <p><strong>Bachelor of Technology</strong> in <strong>Computer Science Engineering</strong>, <em>SVS Group of Institutions</em> (Aug 2020 - Jul 2024).</p>
+        <p><strong>MPC</strong>, <em>Shivani Junior College</em> (Jul 2018 - Jul 2020).</p>
     </section>
-    <section class="certificates-section" id="certificates">
-        <h2>CERTIFICATIONS:</h2>
-        <br><br>
-        <div  class="certificates-container">
-        <div class="responsive-webdesign" onmouseover="showButton('webdesign')" onmouseout="hideButton('webdesign')">
-            <h3>Responsive Web Design</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="webdesign" class="hidden">View certificate</button>
-        </div>
-        <div class="JS" onmouseover="showButton('JS')" onmouseout="hideButton('JS')">
-            <h3>JavaScript Algorithms and Data Structures</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="JS" class="hidden">View certificate</button>
-        </div>
-        <div class="front-end" onmouseover="showButton('front-end')" onmouseout="hideButton('front-end')">
-            <h3>Front End Development Libraries</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="front-end" class="hidden">View Certificate</button>
-        </div>
-        <div class="data-visualization" onmouseover="showButton('data-visualization')" onmouseout="hideButton('data-visualization')">
-            <h3>Data Visualization Certification</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="data-visualization" class="hidden">View Certifiacte</button>
-        </div>
-        <div class="python" onmouseover="showButton('python')" onmouseout="hideButton('python')">
-            <h3>Scientific Computing with Python</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="python" class="hidden">View Certificate</button>
-        </div>
-        <div class="data-analysis" onmouseover="showButton('data-analysis')" onmouseout="hideButton('data-analysis')">
-            <h3>Data Analysis with Python</h3>
-            <p>By Freecodecamp.org</p>
-            <button id="data-analysis"  class="hidden">View Certificate</button>
-        </div>
-        <div class="c#" onmouseover="showButton('c#')" onmouseout="hideButton('c#')">
-            <h3>Foundational C# with Microsoft</h3>
-            <p>By Freecodecamp.org, Microsoft</p>
-            <button id="c#" class="hidden">View certificate</button>
-        </div>
-        </div> <!-- certificates-container -->
-    </section>
-    <section id="projects" class="projects-section">
-        <h2>Projects:</h2>
-        <div class="project-cards">
-            
-            <div class="project-card" id="WebDevelopmentProjects">
-                <h3>Web Development Project</h3>
-                <p>A responsive website built using HTML, CSS, and JavaScript.</p>
-                <button onclick="navigateToProjectPage('web-development')" class="hidden">Learn More</button>
+
+    <!-- Projects Section -->
+    <section id="Projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Web Development</h3>
+                <p>Explore my web development projects, including dynamic websites and interactive applications.</p>
+                <a href="./webdev/webdevelopment.html" class="btn">View Projects</a>
             </div>
-        
-            <div class="project-card" id="machineLearningProjets">
-                <h3>Machine Learning Project</h3>
-                <p>An image classification model using TensorFlow and Python.</p>
-                <button onclick="navigateToProjectPage('Machine-Learning')" class="hidden">Learn More</button>
+
+            <div class="project-box">
+                <h3>Machine Learning</h3>
+                <p>Check out my ML projects, where I apply algorithms to real-world problems like price predictions.</p>
+                <a href="./MLdev/machinelearning.html" class="btn">View Projects</a>
             </div>
-            <div class="project-card" id="IOTProjects">
-                <h3>IoT Project</h3>
-                <p>Smart home automation using Raspberry Pi and sensors.</p>
-                <button onclick="navigateToProjectPage('iot')" class="hidden">Learn More</button>
-            </div>
-            <div class="project-card" id="project4">
-                <h3>Data Science Project</h3>
-                <p>Analyzing and visualizing data with Pandas and Matplotlib.</p>
-                <button onclick="animateProject('project4')" class="hidden">Learn More</button>
-            </div>
-            <div class="project-card" id="project5">
-                <h3>Python Scripting Project</h3>
-                <p>Automating tasks with Python scripts and libraries.</p>
-                <button onclick="animateProject('project5')" class="hidden">Learn More</button>
+
+            <div class="project-box">
+                <h3>IoT</h3>
+                <p>Explore IoT projects, integrating sensors for innovative solutions in real-time monitoring.</p>
+                <a href="./iotdev/iot.html" class="btn">View Projects</a>
             </div>
         </div>
     </section>
-</div>
-    <section id="contact" class="contact-section">
+
+    <!-- Services Section -->
+    <section id="Services" class="services">
+        <h2>Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Creating responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <p>Implementing ML models for insightful data analysis and predictions.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>IoT Projects</h3>
+                <p>Integrating smart devices for connected and automated solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="contact">
         <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form action="#">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+        <p>Feel free to reach out to me via email or connect with me on social platforms.</p>
+        <div class="social-links">
+            <a href="mailto:example@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/gajula-eshwar" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/techtricks1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/_eshwar_0531" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Created by Eshwar Gajula. &copy; 2024</p>
+        <p>&copy; 2024 Eshwar Gajula. All rights reserved.</p>
     </footer>
-    <script src="images/script.js"></script>
+
+    <!-- JavaScript for Typing Animation and Hamburger Menu -->
+    <script src="./script.js"></script>
 </body>
 </html>
