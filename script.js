@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // Typing and Deleting effect
 document.addEventListener("DOMContentLoaded", () => {
     const typedText = ["Web Developer", "Web Designer", "Machine Learning Enthusiast","IoT Developer","Problem Solver"];
@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-=======
 // Typing and Deleting effect
 document.addEventListener("DOMContentLoaded", () => {
     const typedText = ["Web Developer", "Web Designer", "Machine Learning Enthusiast","IoT Developer","Problem Solver"];
@@ -120,4 +119,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
->>>>>>> 609d4aedeb91079529c53c6c7eda59ef8eb50172
+
