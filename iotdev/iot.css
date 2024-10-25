@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset and Basic Styles */
 * {
     margin: 0;
@@ -170,3 +171,104 @@ footer {
         width: 100%; /* Full width for mobile */
     }
 }
+=======
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffd700;
+}
+
+/* Project List Styles */
+.project-list {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    justify-content: center; /* Center the items */
+}
+
+.project {
+    background-color: #1c1c1c;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Three items in a row */
+}
+
+/* Button Styles with Animation */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #1c1c1c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #1c1c1c;
+    transform: scale(1.05); /* Button scaling effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121212;
+    padding: 20px 0;
+    text-align: center;
+    color: #777777;
+    font-size: 0.9rem;
+    opacity: 0; /* Start with hidden */
+    transform: translateY(20px); /* Start with offset */
+    animation: fadeInUp 0.5s forwards; /* Fade in animation */
+}
+
+/* Footer Link Styles */
+
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Stack projects vertically */
+    }
+}
+>>>>>>> 609d4aedeb91079529c53c6c7eda59ef8eb50172
