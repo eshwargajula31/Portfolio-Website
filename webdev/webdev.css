@@ -292,6 +292,7 @@ footer {
 }
 
 .btn {
+    margin-top: 15px;
     padding: 10px 25px;
     background-color: #ffd700;
     color: #1c1c1c;
