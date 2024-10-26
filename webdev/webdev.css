@@ -114,6 +114,7 @@ p {
 .btn {
     display: inline-block;
     margin-top: 15px;
+    margin-right: 10px;
     padding: 10px 20px;
     background-color: #ffd700;
     color: #1c1c1c;
