@@ -12,7 +12,7 @@ const skillCategories = [
       { name: 'Python', level: 'Intermediate', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
       { name: 'C++', level: 'Beginner', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
       { name: 'Java', level: 'Beginner', image: '/images/java.svg' },
-      { name: 'Bash', level: 'Intermediate', image: '/images/Bash.svg' },
+      { name: 'Bash', level: 'Intermediate', image: '/images/bash.svg' },
     ],
   },
   {
